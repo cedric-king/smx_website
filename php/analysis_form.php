@@ -61,7 +61,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // Create the Transport
             $transport = (new Swift_SmtpTransport('mail.smxafrika.co.za', 587, 'tls'))
                 ->setUsername('info@smxafrika.co.za')
-                ->setPassword('Sx0791153@');
+                ->setPassword('password');
             
             // Create the Mailer using your created Transport
             $mailer = new Swift_Mailer($transport);
